@@ -12,7 +12,7 @@ You should be dropped to a prompt as the `ros` user in the home directory and an
 ## Validation
 
 1. `ros2 run demo_nodes_cpp talker`
-2. In another terminal, run `docker exec --rm -ti ros2_eloquent_dev_base bash` to bring up a second terminal.
+2. In another terminal, run `docker ps` and take note of the `Container ID`, then run `docker exec --rm -ti <ID> bash` using that `Container ID` to bring up a second terminal on the container.
 3. In the second terminal, run `ros2 run demo_nodes_py listener`.
 
 You should observe the first terminal publishing "Hello World" and the second terminal listening to it.
