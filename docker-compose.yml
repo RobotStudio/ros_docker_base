@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  ros:
+    image: ros2_eloquent_dev_base
+    build: .
+    volumes:
+      - './app:/home/ros/workspace'  
+
